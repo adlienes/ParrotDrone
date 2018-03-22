@@ -1,6 +1,7 @@
 package com.example.enes.parrotdrone;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
@@ -21,8 +22,12 @@ public class MainActivity extends AppCompatActivity {
        popupdialog=new Dialog(this);
     }
 
+
+
+
     public void GosterPopup(View v)
     {
+       /*
         TextView textClose;
         popupdialog.setContentView(R.layout.popup);
 
@@ -34,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         popupdialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        popupdialog.show();
-    }
+        popupdialog.show();*/
 
+        Intent ıntent=new Intent(getApplicationContext(),GridActivity.class);
+        startActivity(ıntent);
+    }
 }
