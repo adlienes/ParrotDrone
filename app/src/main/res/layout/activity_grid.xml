@@ -8,14 +8,79 @@
     tools:context="com.example.enes.parrotdrone.GridActivity">
 
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="700dp"
         android:layout_marginBottom="150dp"
-        android:background="@drawable/grid"
-        android:orientation="vertical">
+        android:background="@drawable/grid2">
 
-    </LinearLayout>
+        <EditText
+            android:id="@+id/Etyukari"
+            android:layout_width="25dp"
+            android:layout_height="170dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="139dp"
+            android:layout_marginStart="139dp"
+            android:background="@color/colorAccent"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:enabled="true"
+            android:inputType="none|textPersonName"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/Etsag"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/Etyukari"
+            android:layout_toEndOf="@+id/Etyukari"
+            android:layout_toRightOf="@+id/Etyukari"
+            android:ems="10"
+            android:cursorVisible="true"
+            android:visibility="invisible"
+            android:background="@color/colorAccent"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EtYukari2"
+            android:layout_width="30dp"
+            android:layout_height="130dp"
+            android:layout_alignBottom="@+id/Etsag"
+            android:layout_toEndOf="@+id/Etsag"
+            android:layout_toRightOf="@+id/Etsag"
+            android:ems="10"
+            android:cursorVisible="true"
+            android:visibility="invisible"
+            android:background="@color/colorAccent"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EtSol"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/EtYukari2"
+            android:layout_toStartOf="@+id/EtYukari2"
+            android:ems="10"
+            android:cursorVisible="true"
+            android:visibility="invisible"
+            android:background="@color/colorAccent"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EtYukari3"
+            android:layout_width="30dp"
+            android:layout_height="205dp"
+            android:layout_above="@+id/EtSol"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:visibility="invisible" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +95,6 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:onClick="GosterPopup"
             android:background="@drawable/yukari" />
 
         <Button
