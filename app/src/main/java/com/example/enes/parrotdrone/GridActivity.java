@@ -15,9 +15,9 @@ import java.io.Console;
 
 public class GridActivity extends AppCompatActivity {
 
-    Button yukari,asagi,sol,sag,donme;
+    Button yukari,asagi,sol,sag,donme,uc;
     Dialog yukaripopup,asagipopup,solpopup,sagpopup,donmepopup;
-    EditText EtYukari,EtYukari2,EtYukari3,EtAsagi,EtSol,EtSag;
+    EditText EtYukari,EtYukari2,EtYukari3,EtAsagi,EtSol,EtSag,EtSag2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +29,14 @@ public class GridActivity extends AppCompatActivity {
         sol=findViewById(R.id.sol);
         sag=findViewById(R.id.sag);
         donme=findViewById(R.id.donme);
+        uc=findViewById(R.id.uc);
 
         EtYukari=findViewById(R.id.Etyukari);
         EtYukari2=findViewById(R.id.EtYukari2);
         EtYukari3=findViewById(R.id.EtYukari3);
         EtSol=findViewById(R.id.EtSol);
         EtSag=findViewById(R.id.Etsag);
+        EtSag2=findViewById(R.id.EtSag2);
 
         yukaripopup=new Dialog(this);
         asagipopup=new Dialog(this);
@@ -152,6 +154,12 @@ public class GridActivity extends AppCompatActivity {
                             EtSag.setVisibility(View.VISIBLE);
                             sagpopup.dismiss();
                         }
+                        else if (popupgiris.getText().toString().equals("5"))
+                        {
+                            EtSag2.setVisibility(View.VISIBLE);
+                            uc.setVisibility(View.VISIBLE);
+                            sagpopup.dismiss();
+                        }
                         else
                         {
                             Toast.makeText(GridActivity.this, "Yanlış Değer Girdiniz.Tekrar Deneyin.", Toast.LENGTH_SHORT).show();
@@ -179,6 +187,7 @@ public class GridActivity extends AppCompatActivity {
                 donmepopup.show();
             }
         });
+
 
     }
 }
